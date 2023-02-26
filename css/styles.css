@@ -67,6 +67,11 @@ body {
   letter-spacing: 0.02em;
 }
 
+.link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .link:not(:last-child) {
   margin-right: 46px;
 }
@@ -83,6 +88,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   fill: var(--light-grey);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:last-child {
@@ -150,6 +157,8 @@ body {
   align-items: center;
   gap: 8px;
   margin-bottom: 50px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .category-buttons:focus {
   color: var(--highlights);
@@ -167,6 +176,8 @@ body {
   border-radius: 4px;
   background-color: var(--cream);
   border: 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:focus,
@@ -198,6 +209,8 @@ body {
 
 .contact-footer {
   color: rgba(255, 255, 255, 60%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-footer:focus,
@@ -390,6 +403,8 @@ header {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 11px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sm-icon-frame:hover,
@@ -406,12 +421,16 @@ header {
   fill: #afb1b8;
   padding-top: 17.1px;
   padding-bottom: 14.25px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-picture {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   flex-basis: calc((100% - 150px) / 6);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-picture:hover,
@@ -435,10 +454,14 @@ header {
   height: 44px;
   border-radius: 50%;
   padding: 11px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-sm-icons {
   fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-sm-icon-frame:hover,
