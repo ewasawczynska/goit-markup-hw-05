@@ -80,6 +80,10 @@ body {
 .link:active,
 .link:hover {
   color: var(--highlights);
+  padding-bottom: 28px;
+  border: 4px;
+  border-color: var(--highlights);
+  border-radius: 2px;
 }
 
 .contact {
