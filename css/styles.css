@@ -70,7 +70,6 @@ body {
 .link {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  padding-bottom: 30px;
 }
 
 .link:not(:last-child) {
@@ -81,9 +80,22 @@ body {
 .link:active,
 .link:hover {
   color: var(--highlights);
-  border-bottom: 4px solid var(--highlights);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+}
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -32px;
+  width: 100%;
+  display: block;
+  height: 4px;
+  background-color: var(--highlights);
+  border-radius: 2px;
 }
 
 .contact {
