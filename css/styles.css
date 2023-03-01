@@ -371,6 +371,9 @@ body {
 .item-box {
   flex-basis: calc((100% - 56px) / 3);
   margin: 0;
+}
+
+.item-box-animation {
   overflow: hidden;
   position: relative;
 }
