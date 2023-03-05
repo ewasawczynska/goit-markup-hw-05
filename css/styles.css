@@ -97,6 +97,7 @@ body {
   height: 4px;
   background-color: var(--highlights);
   border-radius: 2px;
+  left: 0;
 }
 
 .contact {
@@ -372,6 +373,8 @@ body {
 .item-box {
   flex-basis: calc((100% - 56px) / 3);
   margin: 0;
+  transition-property: box-shadow;
+  transition-property: transform;
 }
 
 .item-box-animation {
