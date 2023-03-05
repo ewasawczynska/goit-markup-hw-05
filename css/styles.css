@@ -574,7 +574,6 @@ header {
 }
 .is-hidden {
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
   transition-property: opacity;
   transition-duration: 250ms;
@@ -582,14 +581,28 @@ header {
 }
 
 .is-hidden > .modal {
-  animation: modal-window-animate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation: modal-window-animate-close 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :not(.is-hidden) > .modal {
-  animation: modal-window-animate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation: modal-window-animate-open 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes modal-window-animate {
+@keyframes modal-window-animate-open {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes modal-window-animate-close {
   0% {
     transform: scale(1);
   }
